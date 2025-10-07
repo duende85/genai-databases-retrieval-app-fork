@@ -1,0 +1,8 @@
+host: 172.24.0.2
+port: 5432
+datastore:
+  kind: "postgres"
+  host: 172.24.0.2
+  database: "assistantdemo"
+  user: "postgres"
+  password: "samplepassword"
