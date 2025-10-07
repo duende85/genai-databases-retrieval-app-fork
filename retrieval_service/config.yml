@@ -1,0 +1,9 @@
+host: "<INSTANCE_IP>"
+# port: 8080
+datastore:
+  kind: "postgres"
+  host: "<INSTANCE_IP>"
+  # port: 5432
+  database: "assistantdemo"
+  user: "postgres"
+  password: "samplepassword"
