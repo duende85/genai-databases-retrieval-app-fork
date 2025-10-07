@@ -6,12 +6,13 @@ from retrieval_service.models import models
 with open("retrieval_service/config.yml", "r") as f:
     cfg = yaml.safe_load(f)
 
-# Build the PostgreSQL connection URL
+# Build the PostgreSQL connection URL (use port from datastore)
 db_url = (
     f"postgresql://{cfg['datastore']['user']}:"
     f"{cfg['datastore']['password']}@"
     f"{cfg['datastore']['host']}:"
-    f"{cfg['port']}/{cfg['datastore']['database']}"
+    f"{cfg['datastore'].get('port', 5432)}/"
+    f"{cfg['datastore']['database']}"
 )
 
 # Create the SQLAlchemy engine
