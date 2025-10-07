@@ -1,8 +1,8 @@
-host: "<INSTANCE_IP>"
+host: "172.24.0.2"
 # port: 8080
 datastore:
   kind: "postgres"
-  host: "<INSTANCE_IP>"
+  host: "172.24.0.2"
   # port: 5432
   database: "assistantdemo"
   user: "postgres"
